@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MovieMinds</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background">
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+    <div class="overlay"></div>
+</div>
+
+<header>
+    <div class="logo">🎬 Movie<span>Minds</span></div>
+    <nav>
+        <a class="active">Home</a>
+        <a>Browse</a>
+        <a>Top Rated</a>
+        <a>Watchlist</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Find Your <span>Perfect Movie</span></h1>
+    <p>Tell us your mood & preferences!</p>
+
+    <div class="filter-card">
+
+        <div class="column">
+            <h3>Genre</h3>
+            <div class="buttons" id="genre">
+                <button>Action</button>
+                <button>Comedy</button>
+                <button>Drama</button>
+                <button>Sci-Fi</button>
+                <button>Thriller</button>
+                <button>Romance</button>
+                <button>Horror</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Language</h3>
+            <div class="buttons" id="language">
+                <button>English</button>
+                <button>Hindi</button>
+                <button>Spanish</button>
+                <button>Korean</button>
+                <button>French</button>
+                <button>German</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Current Mood</h3>
+            <div class="buttons" id="mood">
+                <button>Excited</button>
+                <button>Chill</button>
+                <button>Happy</button>
+                <button>Sad</button>
+                <button>Romantic</button>
+                <button>Tense</button>
+                <button>Motivated</button>
+            </div>
+        </div>
+
+        <div class="full-width">
+            <button class="suggest-btn" id="suggestBtn">Get Suggestions →</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="movies">
+    <h2>Recommended Movies For You</h2>
+    <div id="movieContainer" class="movie-container"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
